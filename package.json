@@ -1,0 +1,17 @@
+{
+  "name": "acrodb",
+  "version": "1.0.3",
+  "description": "A JSON database system",
+  "main": "acrodb/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PR3C14D0/AcroDB.git"
+  },
+  "keywords": [],
+  "author": "Preciado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PR3C14D0/AcroDB/issues"
+  },
+  "homepage": "https://github.com/PR3C14D0/AcroDB#readme"
+}

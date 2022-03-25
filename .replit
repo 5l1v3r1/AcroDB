@@ -1,4 +1,4 @@
-entrypoint = "app.js"
+entrypoint = "./test/has.testing.js"
 
 [interpreter]
 command = [

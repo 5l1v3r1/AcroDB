@@ -7,7 +7,6 @@ const add = async (db, key, value) => {
     const dataStr = JSON.stringify(newData);
     fs.writeFileSync(`./databases/${db}.json`, dataStr);
   } catch(err) {
-    console.log(err);
     console.log(`Database with name ${db} not found`);
   }
 }

@@ -1,5 +1,7 @@
 const { fs } = require('./constants');
 const { add } = require('./add');
+const { get } = require('./get');
+const { has } = require('./has');
 
 class db {
   constructor(name) {
@@ -12,8 +14,18 @@ class db {
     }
   }
 
-  add(name, key, value) {
-    add(name, key, value);
+  add(key, value) {
+    add(this.name, key, value);
+  }
+
+  async get(key) {
+    const data = await get(this.name, key);
+    return data;
+  }
+
+  async has(key) {
+    const cb = await has(this.name, key)
+    return cb;
   }
 }
 
